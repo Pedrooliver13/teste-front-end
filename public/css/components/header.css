@@ -16,13 +16,13 @@
   display: block;
   font-size: 1rem;
   color: #777;
+  line-height: 1.2;
 }
 
 .menu .menu__info .menu__title {
+  font-weight: bold;
   font-size: 1.2rem;
 }
-
-
 /* login */
 .menu .menu__login {
   position: relative;
@@ -32,7 +32,6 @@
 
   width: 160px;
 }
-
 .menu .menu__login .menu__name {
   font-size: 1.2rem;
   text-align: end;
@@ -41,7 +40,12 @@
 .menu .menu__login .menu__name span {
   font-size: .8rem;
 }
-.menu .menu__login .menu__image {
+
+.menu .menu__login .menu__image  {
+  position: relative;
+}
+.menu .menu__login .menu__image img{
+  position: relative;
   display: block;
   overflow: hidden;
   width: 45px;
@@ -50,7 +54,6 @@
   border-radius: 50%;
   object-fit: contain;
 }
-
 .menu .menu__login .menu__image::before {
   content: "";
   position: absolute;
@@ -63,6 +66,8 @@
   border: 5px solid var(--orange);
   width: 15px;
   height: 15px;
+
+  z-index: 1;
 }
 
 @media (max-width: 1024px) {

@@ -7,6 +7,8 @@ export default class ActiveMenu {
 
   activeMenu() {
     [...this.menu].forEach((item) => {
+      console.log (item.getAttribute('class'));
+
       const active = this.currentPage.includes(item.getAttribute("href"));
       if (active) item.classList.add(this.activeClass);
     });

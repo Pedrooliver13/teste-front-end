@@ -1,0 +1,36 @@
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  display: flex;
+}
+
+/* BREAKPOINT 576px */
+@media (min-width: 36em) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+/* BREAKPOINT 768px */
+@media (min-width: 48em) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+/* BREAKPOINT 992px */
+@media (min-width: 62em) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+/* BREAKPOINT 1200px */
+@media (min-width: 75em) {
+  .container {
+    max-width: 100%;
+  }
+}

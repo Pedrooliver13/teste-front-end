@@ -3,11 +3,14 @@
   background-color: var(--light-orange);
   color: #000;
   
-  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-family: var(--font-1);
-  padding: 8px 40px;
+}
 
+.menu .container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -31,6 +34,7 @@
   justify-content: space-between;
 
   width: 160px;
+  margin: 8px;
 }
 .menu .menu__login .menu__name {
   font-size: 1.2rem;
@@ -43,6 +47,7 @@
 
 .menu .menu__login .menu__image  {
   position: relative;
+  z-index: 0;
 }
 .menu .menu__login .menu__image img{
   position: relative;
@@ -66,7 +71,6 @@
   border: 5px solid var(--orange);
   width: 15px;
   height: 15px;
-
   z-index: 1;
 }
 
@@ -77,12 +81,7 @@
 }
 
 
-@media (max-width: 900px) {
-  .menu {
-    padding: 8px;
-    justify-content: flex-end;
-  }
-
+@media (max-width: 1000px) {
   .menu .menu__info {
     display: none;
     font-size: 1rem;

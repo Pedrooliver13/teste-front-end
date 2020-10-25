@@ -16,7 +16,7 @@
     </script>
   </head>
   <body>
-    <div class="container">
+    <div class="flex-section">
       <aside class="side-nav">
         <div data-menu="button" aria-expanded="false" aria-controls="menu">
           <div class="one"></div>
@@ -32,7 +32,7 @@
           </header>
 
           <ul class="side-nav__list">
-            <li><a href="index.html">Aprensentação</a></li>
+            <li><a href="/">Aprensentação</a></li>
             <li><a href="comites.html">Comitês</a></li>
             <li><a href="#">Autores</a></li>
             <li><a href="#">Eixos temáticas</a></li>
@@ -42,33 +42,64 @@
         </div>
       </aside>
 
-      <section class="page-home">
+      <main class="page-home">
         <header class="menu">
-          <div class="menu__info">
-            <p>Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
-            <h2 class="menu__title">
-              Anais do 13º Simpósio Latino Americano de Ciência de Alimentos
-            </h2>
-            <span>ISSN: 1234-5678</span>
-          </div>
-
-          <div class="menu__login">
-            <div class="menu__name">
-              <h3>Biruleibe</h3>
-              <span>Desenvolvedor(a)</span>
+          <div class="container">
+            <div class="menu__info">
+              <p>Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
+              <h2 class="menu__title">
+                Anais do 13º Simpósio Latino Americano de Ciência de Alimentos
+              </h2>
+              <span>ISSN: 1234-5678</span>
             </div>
 
-            <div class="menu__image">
-              <img src="https://source.unsplash.com/rDEOVtE7vOs/900x900" alt="">
+            <select class="select" name="language" id="">
+              <option value="pt-br">PT-BR</option>
+            </select>
+
+            <div class="menu__login">
+              <div class="menu__name">
+                <h3>Biruleibe</h3>
+                <span>Desenvolvedor(a)</span>
+              </div>
+
+              <div class="menu__image">
+                <img
+                  src="https://source.unsplash.com/rDEOVtE7vOs/900x900"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
+          <!-- /CONTAINER -->
         </header>
 
-        <article class="post">
+        <div class="container">
+          <div class="content">
+            <div class="content__head">
+              <div class="content__title">
+                <h1>
+                  Análise sensorial de preparações funcionais desenvolvidas para
+                  escolares entre 09 e 15 anos, do município de Campinas/SP
+                </h1>
+              </div>
+            </div>
 
-        </article>
-      </section>
+            <div class="content__video">
+              <video controls>
+                <source
+                  src="./public/video/the-witcher.mp4"
+                  type="video/mp4"
+                  poster="./public/img/dewey-4.png"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
+    <!-- /container -->
 
     <script type="module" src="./public/js/scripts.js"></script>
   </body>

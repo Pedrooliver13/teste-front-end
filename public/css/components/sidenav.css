@@ -2,6 +2,7 @@
   position: relative;
   max-width: 250px;
   width: 100%;
+  height: 100vh;
   box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, .2);
   z-index: 1;
 }
@@ -160,5 +161,27 @@
     background-color: #fff;
     transform: none;
     transition: all 205ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+@media (max-width: 360px) {
+  .side-nav [data-menu="button"] {
+    margin-top: 25px;
+  }
+  [data-menu="button"] .one,
+  [data-menu="button"] .two,
+  [data-menu="button"] .three {
+    position: absolute;
+    background-color: var(--orange);
+    border-radius: 10px;
+
+    width: 100%;
+    height: 4px;
+
+    z-index: 99999;
+    transition: 0.5s ease;
+  }
+  .js [data-menu="list"]{
+    transform: translateX(-100%);
   }
 }

@@ -1,0 +1,23 @@
+.questions {
+  border: 1px solid #eee;
+  padding: 8px 16px;
+  margin-top: 12px;
+}
+
+.questions .questions__head {
+  font-family: var(--font-1);
+  font-size: 1rem;
+}
+.questions .questions__head .questions__title{
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--orange);
+}
+.questions .questions__head .questions__author{
+  font-weight: bold;
+}
+
+.questions__content {
+  margin: 8px auto;
+  line-height: 1.5;
+}

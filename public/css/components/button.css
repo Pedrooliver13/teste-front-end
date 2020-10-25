@@ -5,9 +5,9 @@
   font-family: var(--font-1);
   font-size: 1rem;
   cursor: pointer;
-  color: #fff;
 
-  background-color: var(--orange);
+  background-color: var(--light-orange);
+  
   padding: 4px 8px;
   outline: 0;
   
@@ -17,13 +17,24 @@
   transition: .3s;
 }
 
-.btn + .btn {
-  margin-left: 8px;
-}
-
 .btn:hover,
 .btn:focus {
+  transform: scale(1.05);
+  border-color: #777;
+}
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+  transform: scale(1.05);
   border-color: rgba(248, 92, 7, 0.9);
+}
+
+.btn.btn-primary {
+  background-color: var(--orange);
+  color: #fff;
+}
+
+.btn + .btn {
+  margin-left: 8px;
 }
 
 .select {

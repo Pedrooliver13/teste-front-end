@@ -1,5 +1,6 @@
 
-.container {
+.flex-section {
+  max-width: 100%;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -7,30 +8,38 @@
   display: flex;
 }
 
+.container {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 /* BREAKPOINT 576px */
 @media (min-width: 36em) {
   .container {
-    max-width: 100%;
+    max-width: 540px;
   }
 }
 
 /* BREAKPOINT 768px */
 @media (min-width: 48em) {
   .container {
-    max-width: 100%;
+    max-width: 720px;
   }
 }
 
 /* BREAKPOINT 992px */
 @media (min-width: 62em) {
   .container {
-    max-width: 100%;
+    max-width: 960px;
   }
 }
 
 /* BREAKPOINT 1200px */
 @media (min-width: 75em) {
   .container {
-    max-width: 100%;
+    max-width: 1240px;
   }
 }

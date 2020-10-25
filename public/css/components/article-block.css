@@ -1,0 +1,27 @@
+.article {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  
+  margin: 0 8px;
+  font-family: var(--font-1);
+}
+
+.article__title {
+  background-color: var(--light-orange);
+  font-size: 1.3rem;
+  
+  padding: 8px 20px;
+}
+
+.article__list {
+  color: #777;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 8px 16px;
+}
+
+.article__list strong {
+  font-weight: bold;
+}

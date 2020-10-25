@@ -3,7 +3,10 @@
 @import './base/reset.css';
 @import './base/grid.css';
 
+@import './components/button.css';
 @import './components/header.css';
 @import './components/sidenav.css';
 @import './components/content.css';
+@import './components/content-highlight.css';
+@import './components/article-block.css';
 @import './components/footer.css';

@@ -1,12 +1,15 @@
 @import './variables/root.css'; 
 
+/* base */
 @import './base/reset.css';
 @import './base/grid.css';
 
+/* components */
 @import './components/button.css';
 @import './components/header.css';
 @import './components/sidenav.css';
 @import './components/content.css';
 @import './components/content-highlight.css';
 @import './components/article-block.css';
+@import './components/questions.css';
 @import './components/footer.css';

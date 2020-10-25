@@ -16,6 +16,13 @@
   margin-left: auto;
 }
 
+
+@media (min-width: 26em) {
+  .container {
+    max-width: 100%;
+  }
+}
+
 /* BREAKPOINT 576px */
 @media (min-width: 36em) {
   .container {

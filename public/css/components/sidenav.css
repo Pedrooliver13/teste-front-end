@@ -166,6 +166,7 @@
 
 @media (max-width: 360px) {
   .side-nav [data-menu="button"] {
+    position: absolute;
     margin-top: 25px;
   }
   [data-menu="button"] .one,

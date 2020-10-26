@@ -33,6 +33,10 @@
   color: #fff;
 }
 
+.btn.active {
+  background-color: var(--orange);
+}
+
 .btn + .btn {
   margin-left: 8px;
 }

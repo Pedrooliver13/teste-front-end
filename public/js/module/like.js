@@ -29,13 +29,12 @@ export default class Like {
 
   removeValues(id, target) {
     let localObject = JSON.parse(localStorage.getItem("likes"));
+    const targetId = target.getAttribute("id");
 
     if (localObject && localObject.length === 1) {
       localStorage.removeItem("likes");
     } else {
-      let currentTarget = localObject.filter(
-        (item) => target.getAttribute("id") !== item.id,
-      );
+      let currentTarget = localObject.filter((item) => targetId !== item.id);
       localObject = currentTarget;
 
       localStorage.setItem("likes", JSON.stringify(currentTarget));
